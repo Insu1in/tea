@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>平方茶莊 | 讓傳統甘醇，成為你的日常</title>
+  <meta name="description" content="平方茶莊提供高品質在地原茶與自產茶葉，擁有嚴格選茶標準與獨門沖泡技術，完美呈現茶葉本身甘醇香氣。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page Loader Overlay -->
+  <div class="loader-overlay" id="loaderOverlay">
+    <div class="loader-content">
+      <div class="loader-logo">平</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo" id="navLogo">
+        <div class="logo-icon">平</div>
+        <span class="logo-text">平方茶莊</span>
+      </a>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link" id="linkHome">首頁</a></li>
+          <li><a href="about.html" class="nav-link" id="linkAbout">關於我們</a></li>
+          <li><a href="menu.html" class="nav-link" id="linkMenu">精選菜單</a></li>
+          <li><a href="info.html" class="nav-link" id="linkInfo">店家資訊</a></li>
+          <li><a href="events.html" class="nav-link" id="linkEvents">最新活動</a></li>
+          <li><a href="order.html" class="nav-link" id="linkOrder">訂貨專區</a></li>
+          <li><button class="login-btn" id="navLoginBtn">會員登入</button></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="heroSection">
+    <div class="hero-overlay"></div>
+    <div class="hero-spotlight" id="heroSpotlight"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tagline">拾回古早味，慢享原茶香</div>
+        <h1 class="hero-title">讓傳統甘醇，<br>成為你的日常</h1>
+        <p class="hero-description">
+          平方茶莊堅持嚴格的選茶標準與獨家沖泡技術，自產自銷，提供高品質的單一原茶與精品茶葉。我們致力於將傳統茶工藝帶入現代生活，讓每一口都甘醇無負擔。
+        </p>
+        <div class="hero-btns">
+          <a href="menu.html" class="btn btn-primary" id="heroBtnMenu">精選茶單</a>
+          <a href="order.html" class="btn btn-outline" id="heroBtnOrder">大宗訂貨</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Ad Carousel Section -->
+  <section class="carousel-section" id="carouselSection">
+    <div class="container">
+      <h2 class="section-title">熱門焦點與公告</h2>
+      <p class="section-subtitle">隨時掌握平方茶莊的最新優惠活動、茶葉烘焙公告與新品發佈資訊</p>
+      
+      <div class="carousel-container">
+        <div class="carousel-track">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <img src="images/carousel-1.png" alt="新鮮沖泡茶品優惠" class="carousel-img">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-content">
+              <span class="carousel-badge">限時優惠</span>
+              <h3 class="carousel-slide-title">古法慢火萃<br>原茶真甘醇</h3>
+              <p class="carousel-slide-desc">
+                歡慶開幕！即日起現場加入平方茶莊會員，首購即享手作現萃原茶單杯 8 折優惠，慢享台灣茶特有甘甜。
+              </p>
+              <a href="events.html" class="btn btn-primary">了解活動詳情</a>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <img src="images/carousel-2.png" alt="精品茶葉自產自銷" class="carousel-img">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-content">
+              <span class="carousel-badge">職人推薦</span>
+              <h3 class="carousel-slide-title">頂級手採原茶葉<br>限量自產自銷</h3>
+              <p class="carousel-slide-desc">
+                嚴選產地直送蜜香紅茶與日月潭紅玉，由茶師監製，經由傳統發酵與慢火焙火，完美呈現頂級原茶風味。
+              </p>
+              <a href="menu.html" class="btn btn-primary">瀏覽精選茶單</a>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Controls -->
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">&#10094;</button>
+        <button class="carousel-btn carousel-btn-next" aria-label="Next slide">&#10095;</button>
+        
+        <!-- Indicators -->
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Share Section -->
+  <section class="social-share-section" id="shareSection">
+    <div class="container">
+      <h2 class="section-title">分享甘醇，傳遞茶香</h2>
+      <p class="section-subtitle">把這份純粹無負擔的在地原茶香氣，分享給您身邊的朋友們</p>
+      
+      <div class="share-grid">
+        <div class="share-card fb" id="shareFb">
+          <span class="share-icon">f</span>
+          <span class="share-title">分享到 Facebook</span>
+        </div>
+        <div class="share-card line" id="shareLine">
+          <span class="share-icon">L</span>
+          <span class="share-title">LINE 好友分享</span>
+        </div>
+        <div class="share-card ig" id="shareIg">
+          <span class="share-icon">📷</span>
+          <span class="share-title">追蹤 Instagram</span>
+        </div>
+        <div class="share-card copylink" id="shareCopy">
+          <span class="share-icon">🔗</span>
+          <span class="share-title">複製網頁連結</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Member Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <h2 class="modal-title">會員登入</h2>
+      <p class="modal-subtitle">歡迎登入平方茶莊，開啟您的純粹品茗生活</p>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">電子信箱 Email</label>
+          <input type="email" id="loginEmail" class="form-control" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">密碼 Password</label>
+          <input type="password" id="loginPassword" class="form-control" placeholder="請輸入密碼" required>
+        </div>
+        <div class="form-group" style="flex-direction: row; justify-content: space-between; align-items: center; margin-top: -8px; margin-bottom: 24px;">
+          <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; font-size: 0.8rem; cursor: pointer;">
+            <input type="checkbox" style="accent-color: var(--primary-color);"> 記住我
+          </label>
+          <a href="#" style="font-size: 0.8rem; color: var(--secondary-color); font-weight: 500;">忘記密碼？</a>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn">立即登入</button>
+      </form>
+      
+      <p style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">
+        還不是會員？<a href="#" style="color: var(--primary-color); font-weight: 600;">點此免費註冊</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>平方茶莊</h2>
+        <p>以傳統工藝還原古早甘醇，讓高品質原茶成為無負擔的日常享受。我們嚴選每一片茶葉，堅持自產自銷，提供茶友們最安心、穩定的天然甘醇風味。</p>
+      </div>
+      <div class="footer-links">
+        <h3>快速連結</h3>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="menu.html">精選茶單</a></li>
+          <li><a href="info.html">店家資訊</a></li>
+          <li><a href="events.html">最新活動</a></li>
+          <li><a href="order.html">大宗訂貨</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>聯絡我們</h3>
+        <p><strong>電話：</strong>0906-997-718</p>
+        <p><strong>Email：</strong>zhongbingxun53@gmail.com</p>
+        <p><strong>地址：</strong>台中市西屯區台灣大道三段99號</p>
+        <p><strong>營業時間：</strong>週一至週日 10:00 - 21:00</p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 平方茶莊. All Rights Reserved. 版權所有 轉載必究</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-icon" aria-label="Facebook">F</a>
+        <a href="#" class="footer-social-icon" aria-label="Line">L</a>
+        <a href="#" class="footer-social-icon" aria-label="Instagram">I</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

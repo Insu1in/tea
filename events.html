@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最新活動 | 平方茶莊</title>
+  <meta name="description" content="了解平方茶莊最新會員優惠、新品上市公告與茶藝體驗課程。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="subpage">
+
+  <!-- Page Loader Overlay -->
+  <div class="loader-overlay" id="loaderOverlay">
+    <div class="loader-content">
+      <div class="loader-logo">平</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">平</div>
+        <span class="logo-text">平方茶莊</span>
+      </a>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link" id="linkHome">首頁</a></li>
+          <li><a href="about.html" class="nav-link" id="linkAbout">關於我們</a></li>
+          <li><a href="menu.html" class="nav-link" id="linkMenu">精選菜單</a></li>
+          <li><a href="info.html" class="nav-link" id="linkInfo">店家資訊</a></li>
+          <li><a href="events.html" class="nav-link" id="linkEvents">最新活動</a></li>
+          <li><a href="order.html" class="nav-link" id="linkOrder">訂貨專區</a></li>
+          <li><button class="login-btn" id="navLoginBtn">會員登入</button></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Banner -->
+  <section class="subpage-banner" id="eventsBanner">
+    <div>
+      <h1 class="banner-title">最新活動與公告</h1>
+      <p class="banner-desc">掌握平方茶莊第一手優惠資訊與品茶分享活動</p>
+    </div>
+  </section>
+
+  <!-- DM Event Showcase -->
+  <section class="events-dm-section">
+    <div class="container">
+      <div class="events-dm-grid">
+        
+        <!-- Left: Image DM -->
+        <div class="events-dm-img">
+          <img src="images/event-dm.png" alt="開幕慶會員招募 DM">
+        </div>
+        
+        <!-- Right: Text Description -->
+        <div class="events-intro">
+          <span class="carousel-badge" style="margin-bottom:12px;">主打活動</span>
+          <h3>慶開幕！會員大募集</h3>
+          <p>
+            平方茶莊於西屯區開設的首家概念店正式試營運！我們致力於將產地直營、自產自銷的頂級手採原葉茶飲，以最親民、健康的無糖現萃方式帶給茶友們。
+          </p>
+          <p style="font-weight: 600; color: var(--primary-color); margin-bottom: 16px;">
+            「古法慢火萃，原茶真甘醇」—— 即日起至本月底，特別推出以下開幕回饋：
+          </p>
+          
+          <ul class="events-highlights">
+            <li><strong>手萃茶品 8 折：</strong>現場或線上加入平方茶莊會員，首購現萃原茶享 8 折。</li>
+            <li><strong>買茶送茶具：</strong>大宗訂購茶葉滿 5 斤，即贈送特製天然竹製精品茶則乙個。</li>
+            <li><strong>滿額免運費：</strong>本島單筆茶葉消費滿 NT$ 1,500 即享黑貓宅急便免運費送到家。</li>
+          </ul>
+          
+          <button class="btn btn-primary login-btn" style="width: fit-content;">立即登入/註冊會員</button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Events List -->
+  <section class="events-list-section">
+    <div class="container">
+      <h2 class="section-title">更多精彩活動</h2>
+      <p class="section-subtitle">點擊下方活動卡片，進一步參與我們的限定主題與專案優惠</p>
+      
+      <div class="events-list-grid">
+        
+        <!-- Event Card 1 -->
+        <div class="event-card">
+          <div class="event-card-banner" style="background-color: var(--primary-light);">
+            限量冬片茶上市
+            <span class="event-card-tag">季節限定</span>
+          </div>
+          <div class="event-card-content">
+            <span class="event-card-time">2026/12/15 - 售完為止</span>
+            <h3 class="event-card-title">冷霜花香「冬片茶」限量預購中</h3>
+            <p class="event-card-desc">
+              冬至前後手採，因氣候冷涼，茶葉生長緩慢，產量極為稀少。茶湯帶有獨特高雅的冷霜氣與清淡花香，口感滑順無苦澀，茶友必嚐！
+            </p>
+            <a href="order.html" class="event-card-action">立即前往預購 &rarr;</a>
+          </div>
+        </div>
+        
+        <!-- Event Card 2 -->
+        <div class="event-card">
+          <div class="event-card-banner" style="background-color: var(--secondary-hover);">
+            商務採購與批發
+            <span class="event-card-tag">商務專案</span>
+          </div>
+          <div class="event-card-content">
+            <span class="event-card-time">長期優惠專案</span>
+            <h3 class="event-card-title">商務會所與辦公室茶葉月配服務</h3>
+            <p class="event-card-desc">
+              針對招待貴客、辦公室同仁飲用需求，提供穩定自產自銷批發茶葉。凡月配或單次採購 20 斤以上，享批發專案折扣與免運優惠。
+            </p>
+            <a href="order.html" class="event-card-action">查看大宗訂購規章 &rarr;</a>
+          </div>
+        </div>
+        
+        <!-- Event Card 3 -->
+        <div class="event-card">
+          <div class="event-card-banner" style="background-color: var(--primary-color);">
+            職人烘焙體驗課
+            <span class="event-card-tag">茶藝交流</span>
+          </div>
+          <div class="event-card-content">
+            <span class="event-card-time">每週六 14:00 - 16:00</span>
+            <h3 class="event-card-title">職人焙火與沖泡工藝體驗課</h3>
+            <p class="event-card-desc">
+              由平方茶莊資深茶師授課，帶您親身體會綠茶的「殺青」、烏龍茶的「團揉與焙火」，並學習掌握水溫與時間的現萃秘訣，名額僅限 6 人。
+            </p>
+            <a href="info.html" class="event-card-action">聯絡留言板預約 &rarr;</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Member Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <h2 class="modal-title">會員登入</h2>
+      <p class="modal-subtitle">歡迎登入平方茶莊，開啟您的純粹品茗生活</p>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">電子信箱 Email</label>
+          <input type="email" id="loginEmail" class="form-control" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">密碼 Password</label>
+          <input type="password" id="loginPassword" class="form-control" placeholder="請輸入密碼" required>
+        </div>
+        <div class="form-group" style="flex-direction: row; justify-content: space-between; align-items: center; margin-top: -8px; margin-bottom: 24px;">
+          <label style="display: flex; align-items: center; gap: 6px; font-weight: normal; font-size: 0.8rem; cursor: pointer;">
+            <input type="checkbox" style="accent-color: var(--primary-color);"> 記住我
+          </label>
+          <a href="#" style="font-size: 0.8rem; color: var(--secondary-color); font-weight: 500;">忘記密碼？</a>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn">立即登入</button>
+      </form>
+      
+      <p style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">
+        還不是會員？<a href="#" style="color: var(--primary-color); font-weight: 600;">點此免費註冊</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>平方茶莊</h2>
+        <p>以傳統工藝還原古早甘醇，讓高品質原茶成為無負擔的日常享受。我們嚴選每一片茶葉，堅持自產自銷，提供茶友們最安心、穩定的天然甘醇風味。</p>
+      </div>
+      <div class="footer-links">
+        <h3>快速連結</h3>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="menu.html">精選茶單</a></li>
+          <li><a href="info.html">店家資訊</a></li>
+          <li><a href="events.html">最新活動</a></li>
+          <li><a href="order.html">大宗訂貨</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>聯絡我們</h3>
+        <p><strong>電話：</strong>0906-997-718</p>
+        <p><strong>Email：</strong>zhongbingxun53@gmail.com</p>
+        <p><strong>地址：</strong>台中市西屯區台灣大道三段99號</p>
+        <p><strong>營業時間：</strong>週一至週日 10:00 - 21:00</p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 平方茶莊. All Rights Reserved. 版權所有 轉載必究</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-icon" aria-label="Facebook">F</a>
+        <a href="#" class="footer-social-icon" aria-label="Line">L</a>
+        <a href="#" class="footer-social-icon" aria-label="Instagram">I</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
