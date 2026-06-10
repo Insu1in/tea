@@ -47,7 +47,7 @@
   <section class="subpage-banner" id="menuBanner">
     <div>
       <h1 class="banner-title">精選茶品菜單</h1>
-      <p class="banner-desc">嚴選高品質原茶葉，由資深茶師監製，滴滴甘醇自然</p>
+      <p class="banner-desc">嚴選高品質手作茶飲與精品茶葉禮盒，給您最純粹的台灣茶風味</p>
     </div>
   </section>
 
@@ -57,237 +57,374 @@
       
       <!-- Category Filtration Tabs -->
       <div class="menu-filter-bar" id="filterBar">
-        <button class="filter-btn active" data-filter="all">全部茶品</button>
-        <button class="filter-btn" data-filter="black">經典紅茶</button>
-        <button class="filter-btn" data-filter="green">清新綠茶</button>
-        <button class="filter-btn" data-filter="oolong">極致烏龍茶</button>
-        <button class="filter-btn" data-filter="other">特選其他</button>
+        <button class="filter-btn active" data-filter="all">全部商品</button>
+        <button class="filter-btn" data-filter="tea-drink">手作現調茶飲</button>
+        <button class="filter-btn" data-filter="tea-leaves">嚴選優質茶葉</button>
+        <button class="filter-btn" data-filter="gift-box">精品茶葉禮盒</button>
       </div>
-
+ 
       <!-- Menu Grid -->
       <div class="menu-grid" id="menuGrid">
-        
-        <!-- 紅茶 1 -->
-        <div class="menu-card" data-category="black">
+        <!-- 茶品 1：蜜香紅茶 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="honey-black-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">紅茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
+              <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
             <img src="images/menu-tea.png" alt="蜜香紅茶">
           </div>
           <div class="menu-card-content">
             <h3 class="menu-card-title">蜜香紅茶</h3>
-            <p class="menu-card-desc">茶湯呈明亮琥珀色，自帶優雅的天然蜂蜜甜香與熟果香，喉韻圓潤細緻，不加糖也帶清甜。</p>
+            <p class="menu-card-desc">嚴選契作蜜香紅茶，茶葉經小綠葉蟬叮咬後，自帶自然的蜂蜜甜香，口感溫潤滑順。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="honey-black-drink" data-type="tea-drink" data-price="NT$ 65" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 65 / 杯)</option>
+                <option value="honey-black-leaves" data-type="tea-leaves" data-price="NT$ 350" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 350 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 800 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 65 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 紅茶 2 -->
-        <div class="menu-card" data-category="black">
+        <!-- 茶品 2：日月潭紅玉 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="ruby-red-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">紅茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
+              <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
             <img src="images/menu-tea.png" alt="日月潭紅玉">
           </div>
           <div class="menu-card-content">
             <h3 class="menu-card-title">日月潭紅玉</h3>
-            <p class="menu-card-desc">又稱台茶 18 號，茶湯艷紅清澈，具有天然肉桂與淡淡薄荷香氣，層次極其豐富，是台灣紅茶的代表。</p>
+            <p class="menu-card-desc">又稱台茶 18 號，茶湯艷紅清亮，自帶肉桂香氣與淡淡薄荷尾韻，台灣紅茶代表。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="ruby-red-drink" data-type="tea-drink" data-price="NT$ 80" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 80 / 杯)</option>
+                <option value="ruby-red-leaves" data-type="tea-leaves" data-price="NT$ 400" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 400 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 1,200 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 80 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 綠茶 1 -->
-        <div class="menu-card" data-category="green">
+        <!-- 茶品 3：三峽龍井 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="longjing-green-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">綠茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
             </div>
             <img src="images/menu-tea.png" alt="三峽龍井">
           </div>
           <div class="menu-card-content">
             <h3 class="menu-card-title">三峽龍井</h3>
-            <p class="menu-card-desc">外形扁平挺秀，茶香清雅，帶有淡淡的炒豆香與青草氣息，口感清爽回甘，富含兒茶素。</p>
+            <p class="menu-card-desc">外形扁平挺秀，帶有清雅的炒豆香氣，口感爽滑回甘，夏日清熱消暑首選。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="longjing-green-drink" data-type="tea-drink" data-price="NT$ 70" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 70 / 杯)</option>
+                <option value="longjing-green-leaves" data-type="tea-leaves" data-price="NT$ 300" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 300 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 900 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 70 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 綠茶 2 -->
-        <div class="menu-card" data-category="green">
+        <!-- 茶品 4：碧螺春 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="biluochun-green-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">綠茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
               <span class="temp-badge hot" title="可熱飲">熱</span>
-              <span class="temp-badge cold" title="可冷飲">冰</span>
             </div>
             <img src="images/menu-tea.png" alt="碧螺春">
           </div>
           <div class="menu-card-content">
             <h3 class="menu-card-title">碧螺春</h3>
-            <p class="menu-card-desc">手採幼嫩芽葉，外觀微捲白毫顯露，茶湯碧綠清澈，散發清新花香，口感鮮靈活潑。</p>
+            <p class="menu-card-desc">手採清明前幼嫩芽葉，條索緊結，碧綠清澈，散發清新花香，口感鮮靈回甘。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="biluochun-green-drink" data-type="tea-drink" data-price="NT$ 75" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 75 / 杯)</option>
+                <option value="biluochun-green-leaves" data-type="tea-leaves" data-price="NT$ 320" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 320 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 1,000 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 75 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 烏龍茶 1 -->
-        <div class="menu-card" data-category="oolong">
+        <!-- 茶品 5：阿里山高山烏龍 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="highmountain-oolong-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">烏龍茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
+              <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
-            <img src="images/menu-tea.png" alt="文山包種">
+            <img src="images/menu-tea.png" alt="阿里山高山烏龍">
           </div>
           <div class="menu-card-content">
-            <h3 class="menu-card-title">文山包種</h3>
-            <p class="menu-card-desc">外觀呈條索狀，翠綠鮮活，茶香幽雅如花，滋味甘潤清醇，入口後齒頰留香，回韻無窮。</p>
+            <h3 class="menu-card-title">阿里山高山烏龍</h3>
+            <p class="menu-card-desc">產自高海拔雲霧茶區，具獨特冷霜蘭花香，湯質滑軟回韻無窮，清甜耐泡。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="highmountain-oolong-drink" data-type="tea-drink" data-price="NT$ 90" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 90 / 杯)</option>
+                <option value="highmountain-oolong-leaves" data-type="tea-leaves" data-price="NT$ 500" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 500 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 1,100 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 90 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 烏龍茶 2 -->
-        <div class="menu-card" data-category="oolong">
+        <!-- 茶品 6：東方美人香茗 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="beauty-oolong-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">烏龍茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
               <span class="temp-badge hot" title="可熱飲">熱</span>
-              <span class="temp-badge cold" title="可冷飲">冰</span>
             </div>
-            <img src="images/menu-tea.png" alt="高山烏龍">
+            <img src="images/menu-tea.png" alt="東方美人香茗">
           </div>
           <div class="menu-card-content">
-            <h3 class="menu-card-title">高山烏龍</h3>
-            <p class="menu-card-desc">來自阿里山高海拔茶區，長年雲霧繚繞，茶湯富含果膠質，口感滑潤，獨特冷霜蘭花香持久。</p>
+            <h3 class="menu-card-title">東方美人香茗</h3>
+            <p class="menu-card-desc">天然受小綠葉蟬叮咬，茶湯琥珀色，帶有成熟蜂蜜甜香與蜜果芬芳，喉韻極佳。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="beauty-oolong-drink" data-type="tea-drink" data-price="NT$ 120" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 120 / 杯)</option>
+                <option value="beauty-oolong-leaves" data-type="tea-leaves" data-price="NT$ 600" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 600 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 1,500 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 120 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 烏龍茶 3 -->
-        <div class="menu-card" data-category="oolong">
+        <!-- 茶品 7：木柵鐵觀音 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="tieguanyin-oolong-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">烏龍茶</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
-            </div>
-            <img src="images/menu-tea.png" alt="東方美人">
-          </div>
-          <div class="menu-card-content">
-            <h3 class="menu-card-title">東方美人</h3>
-            <p class="menu-card-desc">又名白毫烏龍，經小綠葉蟬吸食叮咬，茶湯呈金黃琥珀色，具獨特且強烈的成熟天然蜂蜜香與熟果香。</p>
-            <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 2,000 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 烏龍茶 4 -->
-        <div class="menu-card" data-category="oolong">
-          <div class="menu-card-img-box">
-            <span class="menu-tag">烏龍茶</span>
-            <div class="menu-temp-badges">
               <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
             <img src="images/menu-tea.png" alt="木柵鐵觀音">
           </div>
           <div class="menu-card-content">
             <h3 class="menu-card-title">木柵鐵觀音</h3>
-            <p class="menu-card-desc">遵循傳統炭焙工藝，經多次反覆團揉與慢火烘焙，茶湯帶有獨特微酸與火香味，醇厚沉穩。</p>
+            <p class="menu-card-desc">傳統手工炭焙工藝，焦糖火香濃郁，具木質炭香與獨特弱果酸韻，回甘強烈。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="tieguanyin-oolong-drink" data-type="tea-drink" data-price="NT$ 85" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 85 / 杯)</option>
+                <option value="tieguanyin-oolong-leaves" data-type="tea-leaves" data-price="NT$ 450" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 450 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 1,300 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 85 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 其他 1 -->
-        <div class="menu-card" data-category="other">
+        <!-- 茶品 8：無毒契作菊花茶 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="chrysanthemum-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">其他</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
+              <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
-            <img src="images/menu-tea.png" alt="菊花茶">
+            <img src="images/menu-tea.png" alt="無毒契作菊花茶">
           </div>
           <div class="menu-card-content">
-            <h3 class="menu-card-title">菊花茶</h3>
-            <p class="menu-card-desc">嚴選無毒契作杭菊，無二氧化硫漂白，茶湯金黃透亮，散發清芬花香，甘甜降火、舒緩明目。</p>
+            <h3 class="menu-card-title">無毒契作菊花茶</h3>
+            <p class="menu-card-desc">與苗栗銅鑼茶農契作，清香杭菊在杯中綻放，天然甘甜，具降火氣、明目功效。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="chrysanthemum-drink" data-type="tea-drink" data-price="NT$ 60" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 60 / 杯)</option>
+                <option value="chrysanthemum-leaves" data-type="tea-leaves" data-price="NT$ 280" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 280 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 600 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 60 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 其他 2 -->
-        <div class="menu-card" data-category="other">
+        <!-- 茶品 9：陳年普洱熟茶 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="puer-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">其他</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
               <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
-            <img src="images/menu-tea.png" alt="普洱茶">
+            <img src="images/menu-tea.png" alt="陳年普洱熟茶">
           </div>
           <div class="menu-card-content">
-            <h3 class="menu-card-title">普洱茶</h3>
-            <p class="menu-card-desc">優選雲南大葉種陳年熟普，茶性極溫和，茶湯紅濃明亮，具獨特滑潤陳香，醇厚回甘，越陳越香。</p>
+            <h3 class="menu-card-title">陳年普洱熟茶</h3>
+            <p class="menu-card-desc">精選大葉種熟普洱，茶性溫和，入口滑順，具沉穩古木陳香，養生溫潤。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="puer-drink" data-type="tea-drink" data-price="NT$ 95" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 95 / 杯)</option>
+                <option value="puer-leaves" data-type="tea-leaves" data-price="NT$ 550" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 550 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 950 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 95 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
-        <!-- 其他 3 -->
-        <div class="menu-card" data-category="other">
+        <!-- 茶品 10：翠玉冬片茶 -->
+        <div class="menu-card" data-category="tea-drink tea-leaves" data-id="dongpian-drink" style="cursor: pointer;">
           <div class="menu-card-img-box">
-            <span class="menu-tag">其他</span>
+            <span class="menu-tag" style="background-color: var(--primary-color); color: var(--text-light);">現調茶飲</span>
             <div class="menu-temp-badges">
-              <span class="temp-badge hot" title="可熱飲">熱</span>
               <span class="temp-badge cold" title="可冷飲">冰</span>
+              <span class="temp-badge hot" title="可熱飲">熱</span>
             </div>
-            <img src="images/menu-tea.png" alt="冬片茶">
+            <img src="images/menu-tea.png" alt="翠玉冬片茶">
           </div>
           <div class="menu-card-content">
-            <h3 class="menu-card-title">冬片茶</h3>
-            <p class="menu-card-desc">冬至前後暖冬氣候中萌芽手採，產量極為稀少。茶湯帶特有冷霜氣與清淡花香，甘甜無苦澀感。</p>
+            <h3 class="menu-card-title">翠玉冬片茶</h3>
+            <p class="menu-card-desc">冬至冷冽環境下採摘，帶有極稀有的冷霜香與清亮甜感，滋味甘潤毫無澀感。</p>
+            <div class="menu-select-wrapper" style="margin-top: 14px; margin-bottom: 8px;">
+              <select class="menu-product-select" style="width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-dark); background-color: var(--bg-card); cursor: pointer; outline: none; transition: border-color 0.3s; font-weight: 500;">
+                <option value="dongpian-drink" data-type="tea-drink" data-price="NT$ 100" data-unit="杯" data-tag="現調茶飲" data-tag-bg="var(--primary-color)" data-tag-color="var(--text-light)">現調茶飲 (NT$ 100 / 杯)</option>
+                <option value="dongpian-leaves" data-type="tea-leaves" data-price="NT$ 480" data-unit="包" data-tag="嚴選茶葉" data-tag-bg="var(--secondary-color)" data-tag-color="var(--primary-color)">嚴選茶葉 (NT$ 480 / 包)</option>
+              </select>
+            </div>
             <div class="menu-card-footer">
-              <span class="menu-card-price">NT$ 1,600 <span style="font-size:0.75rem; color:var(--text-muted);">/ 斤</span></span>
-              <a href="order.html" class="menu-order-now">立即訂購 &rarr;</a>
+              <span class="menu-card-price">NT$ 100 <span style="font-size:0.75rem; color:var(--text-muted);">/ 杯</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
             </div>
           </div>
         </div>
 
+        <!-- 禮盒 1 -->
+        <div class="menu-card" data-category="gift-box" data-id="gift-royal" style="cursor: pointer;">
+          <div class="menu-card-img-box">
+            <span class="menu-tag" style="background-color: var(--secondary-color); color: var(--primary-color);">精品禮盒</span>
+            <img src="images/menu-tea.png" alt="經典御璽茶禮盒">
+          </div>
+          <div class="menu-card-content">
+            <h3 class="menu-card-title">經典御璽茶禮盒</h3>
+            <p class="menu-card-desc">平方茶莊招牌禮盒。內含特選蜜香紅茶與阿里山高山烏龍各半斤，送禮盡顯高貴大氣。</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">NT$ 1,680 <span style="font-size:0.75rem; color:var(--text-muted);">/ 盒</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 禮盒 2 -->
+        <div class="menu-card" data-category="gift-box" data-id="gift-premium-highland" style="cursor: pointer;">
+          <div class="menu-card-img-box">
+            <span class="menu-tag" style="background-color: var(--secondary-color); color: var(--primary-color);">精品禮盒</span>
+            <img src="images/menu-tea.png" alt="台灣手採雙響禮盒">
+          </div>
+          <div class="menu-card-content">
+            <h3 class="menu-card-title">台灣手採雙響禮盒</h3>
+            <p class="menu-card-desc">特級手採阿里山高山茶與東方美人茶，雙罐尊榮禮包裝，商務及長輩送禮首選。</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">NT$ 2,800 <span style="font-size:0.75rem; color:var(--text-muted);">/ 盒</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 禮盒 3 -->
+        <div class="menu-card" data-category="gift-box" data-id="gift-biluochun" style="cursor: pointer;">
+          <div class="menu-card-img-box">
+            <span class="menu-tag" style="background-color: var(--secondary-color); color: var(--primary-color);">精品禮盒</span>
+            <img src="images/menu-tea.png" alt="三峽翠玉碧螺春禮盒">
+          </div>
+          <div class="menu-card-content">
+            <h3 class="menu-card-title">三峽翠玉碧螺春禮盒</h3>
+            <p class="menu-card-desc">清新紙雕風格包裝，內含手工明前碧螺春綠茶，送禮雅致大氣。</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">NT$ 1,200 <span style="font-size:0.75rem; color:var(--text-muted);">/ 盒</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 禮盒 4 -->
+        <div class="menu-card" data-category="gift-box" data-id="gift-tieguanyin" style="cursor: pointer;">
+          <div class="menu-card-img-box">
+            <span class="menu-tag" style="background-color: var(--secondary-color); color: var(--primary-color);">精品禮盒</span>
+            <img src="images/menu-tea.png" alt="木柵老鐵觀音珍藏禮盒">
+          </div>
+          <div class="menu-card-content">
+            <h3 class="menu-card-title">木柵老鐵觀音珍藏禮盒</h3>
+            <p class="menu-card-desc">資深茶師手工炭焙老鐵觀音，以古典雙鐵盒封裝，醇厚火香，極具收藏價值。</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">NT$ 1,980 <span style="font-size:0.75rem; color:var(--text-muted);">/ 盒</span></span>
+              <a href="order.html" class="menu-order-now" style="font-size:0.85rem; color:var(--primary-color); font-weight:600; text-decoration: none;">立刻訂購 &rarr;</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Tea Detail Modal Overlay -->
+  <div class="modal-overlay" id="teaDetailModal">
+    <div class="modal-box tea-detail-box">
+      <button class="modal-close" id="teaDetailClose" aria-label="Close details">✕</button>
+      <div class="tea-detail-grid">
+        <div class="tea-detail-img-container">
+          <img id="teaDetailImg" src="images/menu-tea.png" alt="茶品詳情圖片">
+        </div>
+        <div class="tea-detail-content-wrapper">
+          <div class="tea-detail-header">
+            <span class="tea-detail-tag" id="teaDetailTag">現調茶飲</span>
+            <h2 class="tea-detail-title" id="teaDetailTitle">茶品名稱</h2>
+            <div class="tea-detail-price" id="teaDetailPrice">NT$ 0 / 單位</div>
+          </div>
+          <div class="tea-detail-divider"></div>
+          <p class="tea-detail-desc" id="teaDetailDesc">詳細茶品描述載入中...</p>
+          <div class="tea-detail-info-block">
+            <div class="tea-detail-info-item">
+              <span class="info-label">📍 產地來源：</span>
+              <span class="info-value" id="teaDetailOrigin">台灣在地茶園</span>
+            </div>
+            <div class="tea-detail-info-item">
+              <span class="info-label">🍃 風味特色：</span>
+              <span class="info-value" id="teaDetailFlavor">自然香氣</span>
+            </div>
+            <div class="tea-detail-info-item">
+              <span class="info-label">🍵 沖泡建議：</span>
+              <span class="info-value" id="teaDetailBrewing">手作沖泡</span>
+            </div>
+          </div>
+          <div class="tea-detail-actions">
+            <a href="order.html" class="btn btn-primary tea-detail-order-btn">立即訂購 &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Member Login Modal -->
   <div class="modal-overlay" id="loginModal">
