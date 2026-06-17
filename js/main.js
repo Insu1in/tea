@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initLoginModal();
   initPageLoader();
+  initSocialShare();
   
   // --- Page Specific Initializations ---
   const path = window.location.pathname;
@@ -10,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (page === '' || page === 'index.html') {
     initCarousel();
-    initSocialShare();
     initHeroSpotlight();
   } else if (page === 'menu.html') {
     initMenuFilter();
@@ -205,7 +205,7 @@ function initCarousel() {
    4. Social Share Actions
    ========================================================================== */
 function initSocialShare() {
-  const shareCards = document.querySelectorAll('.share-card');
+  const shareCards = document.querySelectorAll('.share-card, .footer-share-card');
   
   shareCards.forEach(card => {
     card.addEventListener('click', () => {
@@ -334,15 +334,16 @@ function initContactForm() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
+    const category = document.getElementById('category').value;
     const msg = document.getElementById('message').value;
 
-    if (!name || !email || !msg) {
-      alert('請填寫姓名、Email 以及留言內容！');
+    if (!name || !email || !category || !msg) {
+      alert('請填寫姓名、Email、諮詢類別以及留言內容！');
       return;
     }
 
     // Success response
-    alert(`感謝您的留言，${name} 先生/小姐！\n我們已將您的建議寄送至平方茶莊信箱，專人會儘速於 24 小時內以 Email (${email}) 或電話 (${phone || '未提供'}) 與您聯繫！`);
+    alert(`感謝您的留言，${name} 先生/小姐！\n關於您詢問的「${category}」事宜，我們已收到留言。專人會儘速於 24 小時內以 Email (${email}) 或電話 (${phone || '未提供'}) 與您聯繫！`);
     contactForm.reset();
   });
 }
